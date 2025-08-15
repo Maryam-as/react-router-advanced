@@ -15,7 +15,9 @@ export async function loader() {
   const response = await fetch("http://localhost:8080/events");
 
   if (!response.ok) {
-    throw { message: "Could not fetch events." };
+    throw new Response(JSON.stringify({ message: "Could not fetch events." }), {
+      status: 500,
+    });
   } else {
     // Return the Response object directly — React Router will automatically
     // parse the JSON when accessed via useLoaderData in the component
