@@ -29,6 +29,9 @@ const router = createBrowserRouter([
           },
           {
             path: ":eventId",
+            // Added `id` property to the :eventId route to give the route a stable identifier.
+            // This allows nested routes (like edit) to reference the same loader data using useRouteLoaderData('event-detail').
+            id: "event-detail",
             loader: eventDetailLoader,
             children: [
               {
