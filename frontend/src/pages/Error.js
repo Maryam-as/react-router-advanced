@@ -1,13 +1,13 @@
 import MainNavigation from "../components/MainNavigation";
+import PageContent from "../components/PageContent";
 
 function ErrorPage() {
   return (
     <>
       <MainNavigation />
-      <main>
-        <h1>An error occurred!</h1>
-        <p>Could not find resource or page.</p>
-      </main>
+      <PageContent title="An error occurred!">
+        <p>Something went wrong!</p>
+      </PageContent>
     </>
   );
 }
