@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"Vuejs Amsterdam","image":"https://plus.unsplash.com/premium_photo-1681487469745-91d1d8a5836b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","date":"2026-03-12","description":"The Vue Event Community takes place annually in Amsterdam that brings you Core Framework updates and Latest Insights on Vue and Vite. Since Vuejs Amsterdam started in 2018 it has been a sold-out conference with the creator of Vue, Evan You opening the event. The State of Vuenion the highly anticipated anual returning talk.","id":"3235d16d-a75f-4c30-8e1b-3bed0422776b"},{"title":"React Summit","image":"https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","date":"2025-11-18","description":"React Summit offers a hybrid format with both remote and in-person participation. The first day will be streamed from the New York venue including hybrid networking features and interactive entertainment; and the second day, as well as the numerous free workshops, will be streamed to the global audience online.","id":"e63a604d-0e0c-4af6-b71c-e0bff9a6d01e"},{"title":"JSWorld Conference","image":"https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","date":"2025-03-12","description":"JSworld Conference as a full 3-day event displayed the latest topics involving AI in Frontend, LLMs and Generative AI, Web Performance, Agnostic JavaScript Tooling, TypeScript, Three.js, Deno, Astro, WebXR, Node.js, React, Vue, Angular 15, Qwik, Vite and so much more!!","id":"13fa37be-20c1-43fc-849c-0fb7c88b6da0"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
