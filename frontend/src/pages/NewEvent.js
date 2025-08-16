@@ -23,6 +23,14 @@ export async function action({ request, params }) {
     body: JSON.stringify(eventData),
   });
 
+  // If the backend responds with 422 (Unprocessable Entity), it means
+  // validation failed (e.g., missing or invalid input data).
+  // Returning the response here allows React Router to expose the error
+  // data to the form, so validation messages can be displayed to the user.
+  if (response.status === 422) {
+    return response;
+  }
+
   if (!response.ok) {
     throw new Response(JSON.stringify({ message: "Could not save event." }), {
       status: 500,
