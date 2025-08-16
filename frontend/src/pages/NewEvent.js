@@ -1,3 +1,4 @@
+import { redirect } from "react-router-dom";
 import EventForm from "../components/EventForm";
 
 function NewEventPage() {
@@ -27,4 +28,8 @@ export async function action({ request, params }) {
       status: 500,
     });
   }
+
+  // Use redirect from react-router-dom to automatically navigate the user
+  // back to the /events page after successfully creating a new event.
+  return redirect("/events");
 }
