@@ -1,9 +1,17 @@
-import { useNavigate, Form } from "react-router-dom";
+import { useNavigate, Form, useNavigation } from "react-router-dom";
 
 import classes from "./EventForm.module.css";
 
 function EventForm({ method, event }) {
   const navigate = useNavigate();
+  // useNavigation gives us information about the current navigation state.
+  // Here we use it to check if a form submission is in progress.
+  const navigation = useNavigation();
+
+  // isSubmitting will be true if the form is currently being submitted.
+  // This lets us disable buttons and show a submitting state while submission is ongoing.
+  const isSubmitting = navigation.state === "submitting";
+
   function cancelHandler() {
     navigate("..");
   }
@@ -51,10 +59,12 @@ function EventForm({ method, event }) {
         />
       </p>
       <div className={classes.actions}>
-        <button type="button" onClick={cancelHandler}>
+        <button type="button" onClick={cancelHandler} disabled={isSubmitting}>
           Cancel
         </button>
-        <button>Save</button>
+        <button disabled={isSubmitting}>
+          {isSubmitting ? "Submitting..." : "Save"}
+        </button>
       </div>
     </Form>
   );
